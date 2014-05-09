@@ -1,8 +1,8 @@
-# Separability from Spectrum and the Partial Transpose
+# Is Separability from Spectrum Determined by the Partial Transpose?
 
 A small collection of MATLAB scripts that supplement the content in the following paper:
 
-[AJR14] A. Cosentino, PPT-indistinguishable states via semidefinite programming. [arXiv:???][1]
+[AJR14] S. Arunachalam, N. Johnston, V. Russo Is Separability from Spectrum Determined by the Partial Transpose? [arXiv:???][1]
 
 See Lemma 2 and Lemma 5 in [AJR14] for more information in regards to the MATLAB scripts.
 
@@ -17,7 +17,6 @@ Requires:
 
 ## Usage
 
-In `ppt_indist.py` modify the parameter _k_ and _d_ and run it with the following command:
-
-`python ppt_indist.py`
-# README Temp
+In `ChoiExample.m`, the script determines the eigenvalue range described in Lemma 5 for the Choi Map by using
+`EigenInterval.m`, and also runs the semidefinite program (SDP) described in Eq. (4) of [1] in `EigenRangeSDP.m`. 
+A second example of using the reduction map is also given. 
